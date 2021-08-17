@@ -1,0 +1,98 @@
+\documentclass[letterpaper]{article}
+    \usepackage{fullpage}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage{sourcesanspro}
+    \usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+    \pagestyle{empty}
+    \raggedright
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+    \vspace{1mm}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape \textbf {Brandon Jorgenson}}\\
+    \vspace{1mm}
+	(951) 224-7729 $\cdot$ \href{mailto:brandontjorgenson@gmail.com}{brandontjorgenson@gmail.com}\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Brigham Young University}\hfill Sep 2015 - Dec 2021\\
+\vspace{.5mm}
+B.S. Computer Science  \hfill {GPA: 3.82}\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+
+\textbf{Instructure} \hfill May 2021 - Aug 2021\\
+\textit{Software Developer Intern}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Planned, developed, documented, and deployed an internal API and frontend  application that receives and forwards thousands of emails a day
+	\item Wrote the API in Golang and secured it with Okta OAuth 2.0, developed with Docker, and deployed with AWS Controllers and Kubernetes
+	\item Migrated an application from an internal deployment system to Jenkins
+\end{itemize}
+\textbf{FamilySearch} \hfill May 2020 - April 2021\\
+\textit{Software Developer Intern}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Designed and ran multiple Apache Spark programs on AWS EMR and analyzed over one billion records
+	\item Created automated dashboards using Splunk Summary Indexes in order to quickly view system load and trends over long periods of time
+	\item Investigated Splunk logs in order to diagnose and fix 5XX errors
+    
+\end{itemize}
+\textbf{BYU Kennedy Center} \hfill Apr 2019 - Dec 2019\\
+\textit{Web Developer}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Documented and decreased the size of dozens of PHP files to increase maintainability
+	\item Coordinated over email and phone with external organizations to test and update two Javascript APIs
+\end{itemize}
+\textbf{Spring Creek Elementary} \hfill Jan 2019 - Mar 2019\\
+\textit{After School Coding Instructor}\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Prepared and taught Code.org lesssons twice a week to 4th-6th graders
+	\item Consulted weekly with supervisor and online resources to improve teaching methods and lesson retention
+\end{itemize}
+
+\header{Skills}
+
+\begin{tabular}{ l l}
+    \vspace{2mm}
+	\textbf{Languages} (Proficient): & Java, Golang, SQL \\
+    \vspace{2mm}
+    \textbf{Languages} (Prior Experience):& Python, C/C++, PHP, Javascript \\
+	\textbf{Technologies}: & AWS, Docker, Kubernetes, Git, Apache Spark  \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+
+\textbf{Rate My Professor Chrome Extension} \\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item The extension dynamically modifies the DOM with Javascript to display BYU professor ratings with information from the RateMyProfessor API
+	\item Distributed on the \href{https://chrome.google.com/webstore/detail/rate-my-byu-professors/ghokpcnkghnkfofadiajmmhinooijmaf}{Chrome Web Store} with a 5-star rating and over 3000 users
+\end{itemize}
+\vspace*{2mm}
+
+\ 
+\end{document}
